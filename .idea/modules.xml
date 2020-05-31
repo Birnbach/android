@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file:///media/touki/514162797AB740FE/STUDIA/PAM - Labki/A3/Kalkulator/A3-Kalkulator.iml" filepath="/media/touki/514162797AB740FE/STUDIA/PAM - Labki/A3/Kalkulator/A3-Kalkulator.iml" group="Kalkulator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Downloads-Kalkulator.iml" filepath="$PROJECT_DIR$/.idea/modules/Downloads-Kalkulator.iml" group="Kalkulator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Downloads-Kalkulator-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Downloads-Kalkulator-app.iml" group="Kalkulator/app" />
+      <module fileurl="file:///media/touki/514162797AB740FE/STUDIA/PAM - Labki/A3/Kalkulator/app/app.iml" filepath="/media/touki/514162797AB740FE/STUDIA/PAM - Labki/A3/Kalkulator/app/app.iml" group="Kalkulator/app" />
+    </modules>
+  </component>
+</project>

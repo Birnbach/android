@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgDay"
+    tools:context=".FunctionInputActivity">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:theme="?attr/actionBarTheme"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:popupTheme="@style/AppTheme.PopupOverlay"-->
+
+<!--        />-->
+
+
+    <TextView
+        android:id="@+id/EuqationVew"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical|end"
+        android:lines="1"
+        android:minLines="1"
+        android:textAlignment="gravity"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="8dp"
+        app:columnCount="5"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="260dp"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:orientation="horizontal"
+        app:rowCount="5">
+
+        <Button
+            android:id="@+id/butsin"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="sin"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="0"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1" />
+
+        <Button
+            android:id="@+id/butpow"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="^"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="1"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1" />
+
+        <Button
+            android:id="@+id/button77"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/lbr"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="2"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1" />
+
+        <Button
+            android:id="@+id/button76"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/rbr"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="3"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1" />
+
+        <Button
+            android:id="@+id/button61"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/backspace"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="4"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowSpan="1" />
+
+
+        <Button
+            android:id="@+id/button57"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_7"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button58"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_8"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button59"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_9"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button60"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/divide"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button80"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/sqrt"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="4"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button62"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_4"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button63"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_5"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button64"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_6"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button65"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/multipl"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button66"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/x"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_column="4"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button67"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_1"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button68"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_2"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button69"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_3"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button70"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/add"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+
+        <Button
+            android:id="@+id/button71"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/equal"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="4"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowSpan="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button72"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/_0"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button73"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/period"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button74"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDay"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button75"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBtnDayDark"
+            android:hapticFeedbackEnabled="true"
+            android:minWidth="24dp"
+            android:minHeight="24dp"
+            android:text="@string/substract"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/f_x"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/EuqationVew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
